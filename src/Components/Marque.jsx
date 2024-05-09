@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react"
 
 const Marque = (prop) => {
 
+
     window.addEventListener("wheel",(e)=>{
         if (e.deltaY > 0) {
             // console.log("nichhe");
