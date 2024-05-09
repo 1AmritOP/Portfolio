@@ -32,6 +32,9 @@ body{
     html{
         font-size: 80%;
     }
+    .App{
+        display: none;
+    }
 }
 @media (max-width: 640px) {
     html{
