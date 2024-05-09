@@ -8,7 +8,7 @@ const Navbar = (prop) => {
     
     useGSAP(() => {
         const tl=gsap.timeline()
-        tl.from(".logo h1, .other li, .other label, .other h1",{
+        tl.from(".logo h1, .other li, .other label, .other h1, .dropdown",{
             y:-100,
             duration:0.7,
             opacity:0,
@@ -28,22 +28,36 @@ const Navbar = (prop) => {
             <ul className="other flex gap-4 items-center">
 
 
-                <NavLink to='/about' className={({isActive})=> `${isActive ? "text-red-600": ""} hover:text-red-600 transition-all ease-in`} 
+                <NavLink to='about' className={({isActive})=> `${isActive ? "text-red-600": ""} hover:text-red-600 max-md:hidden transition-all ease-in`} 
                   > <h1>About-me</h1> </NavLink>
 
 
-                <NavLink to='/skill' className={({isActive}) => `${isActive ? "text-red-600": ""} hover:text-red-600 transition-all ease-in`
+                <NavLink to='skill' className={({isActive}) => `${isActive ? "text-red-600": ""} hover:text-red-600 max-md:hidden transition-all ease-in`
                  } > 
                  <h1>Skills</h1> 
                 </NavLink>
 
 
-                <NavLink to='/contact' className={({isActive})=>
-                    ` ${isActive ? "text-red-600":""} hover:text-red-600 transition-all ease-in`
+                <NavLink  to='contact' className={  ({isActive})=>
+                    ` ${isActive ? "text-red-600":""} hover:text-red-600 max-md:hidden transition-all ease-in`
                 }
                 > 
                 <h1>Contact-me</h1> 
                 </NavLink>
+
+
+                <div className=" max-md:block hidden">
+                    <div className="dropdown text-xl">
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </div>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <NavLink className={' text-black'} to='about' >About-me</NavLink>
+                        <NavLink className={' text-black'} to='skill' >Skills</NavLink>
+                        <NavLink className={' text-black'} to='contact'>Contact-me</NavLink>
+                    </ul>
+                    </div>
+                </div>
 
                 <label
                  className="swap swap-rotate ml-4 scale-75">
@@ -69,6 +83,8 @@ const Navbar = (prop) => {
                     
                 </label>
             </ul>
+
+
         </div>
     </>
   )
