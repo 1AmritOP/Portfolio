@@ -1,0 +1,7 @@
+.marque{
+    transform: translateX(-100%);
+    gap: 1rem;
+}
+.arrow{
+    margin-top: 1vw;
+}
