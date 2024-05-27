@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        'purple': '#4A14B5'
+        'purple': '#615EFC'
       },
       boxShadow: {
         '3xl': '0 0px 3px 3px #4A14B5',
