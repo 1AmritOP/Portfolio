@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const Skills = () => {
   return (
-    <div className=' min-h-[80vh] w-full flex flex-wrap items-center max-[830px]:justify-center max-[830px]:gap-y-8 p-8 justify-between '>
+    <div className='mt-16 min-h-[80vh] w-full flex flex-wrap items-center max-[830px]:justify-center max-[830px]:gap-y-8 p-8 justify-between '>
 
       <div className=' w-[30rem] max-lg:w-[24rem] max-[830px]:w-[30rem] flex flex-col gap-4  px-4'>
         <div className="upper flex justify-between items-center">

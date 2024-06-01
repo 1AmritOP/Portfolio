@@ -6,7 +6,7 @@ import React from 'react'
 const ContactMe = () => {
   return (
     <>
-        <div className=' max-md:flex-col max-md:h-[65vh] w-full h-[80vh] flex items-center justify-between gap-4 py-10 px-12'>
+        <div className='mt-16 max-md:flex-col max-md:h-[65vh] w-full h-[80vh] flex items-center justify-between gap-4 py-10 px-12'>
             <div className="max-md:w-full w-1/2">
                 <button className='  bg-indigo-600 bg-opacity-20 text-purple px-3 py-1 text-lg border-purple border-solid
                          uppercase font-semibold rounded-full border-[1px]'>

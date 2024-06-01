@@ -28,7 +28,7 @@ const Hero = () => {
 
   return (
     <>
-        <div className="hero w-full min-h-[calc(100vh-64px)]   flex items-center justify-between overflow-hidden pl-[7vw] pr-[7vw] flex-wrap max-md:justify-center">
+        <div className="hero mt-16 w-full min-h-[calc(100vh-64px)]   flex items-center justify-between overflow-hidden pl-[7vw] pr-[7vw] flex-wrap max-md:justify-center">
           <div className="left">
             <p className='  font-bold text-lg flex items-center'>Hello there! <MdWavingHand className=' text-[#EFAF33] ' /> </p>
             <h1 className='   font-bold text-[7vw] max-md:text-[18vw] max-md:text-5xl  leading-10'>I am <span>Amrit</span></h1>
