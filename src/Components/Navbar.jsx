@@ -44,10 +44,10 @@ const Navbar = (prop) => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-indigo-500 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2  shadow bg-indigo-500 rounded-box w-52"
             >
-              <li>
-                <NavLink
+              <li className="">
+                <Link
                   to="about"
                   className={({ isActive }) =>
                     `${
@@ -56,10 +56,10 @@ const Navbar = (prop) => {
                   }
                 >
                   <h1>About-me</h1>
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   to="skill"
                   className={({ isActive }) =>
                     `${
@@ -68,10 +68,10 @@ const Navbar = (prop) => {
                   }
                 >
                   <h1>Skills</h1>
-                </NavLink>
+                </Link>
               </li>
               <li>
-                <NavLink
+                <Link
                   to="contact"
                   className={({ isActive }) =>
                     ` ${
@@ -80,16 +80,16 @@ const Navbar = (prop) => {
                   }
                 >
                   <h1>Contact-me</h1>
-                </NavLink>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-center">
           <div className="btn btn-ghost text-xl">
-            <NavLink to="/" className="logo text-3xl font-bold">
+            <Link to="/" className="logo text-3xl font-bold">
               <h1>{prop.name}</h1>
-            </NavLink>
+            </Link>
           </div>
         </div>
         <div className="navbar-end">
@@ -118,6 +118,7 @@ const Navbar = (prop) => {
                 </label>
         </div>
       </div>
+
     </>
   );
 };
